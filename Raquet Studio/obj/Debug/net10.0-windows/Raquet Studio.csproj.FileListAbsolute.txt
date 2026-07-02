@@ -18,3 +18,24 @@ C:\Users\wcoop\source\repos\Raquet Studio\Raquet Studio\obj\Debug\net10.0-window
 C:\Users\wcoop\source\repos\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ProjectForm.resources
 C:\Users\wcoop\source\repos\Raquet Studio\Raquet Studio\bin\Debug\net10.0-windows\Resources\Template.zip
 C:\Users\wcoop\source\repos\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ScriptEditor.resources
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\bin\Debug\net10.0-windows\Resources\Template.zip
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.exe
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.deps.json
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.runtimeconfig.json
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.dll
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.pdb
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.Form1.resources
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ProjectForm.resources
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.Properties.Resources.resources
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ScriptEditor.resources
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.csproj.GenerateResource.cache
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.AssemblyInfoInputs.cache
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.AssemblyInfo.cs
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.csproj.CoreCompileInputs.cache
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.sourcelink.json
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.dll
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\refint\Raquet Studio.dll
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.pdb
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.genruntimeconfig.cache
+C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\ref\Raquet Studio.dll

@@ -64,7 +64,7 @@ namespace Raquet_Studio
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-            using Process process = new Process
+            /*using Process process = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
@@ -72,29 +72,11 @@ namespace Raquet_Studio
                     UseShellExecute = false,
                     //RedirectStandardOutput
                 }
-            };
+            };*/
         }
 
         private void CleanRunButton_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo processInfo = new ProcessStartInfo();
-            processInfo.FileName = ProjectUtil.mingw64Path;
-            processInfo.UseShellExecute = false;
-            processInfo.RedirectStandardInput = true;
-
-            using (Process mingw64 = Process.Start(processInfo))
-            {
-                using (StreamWriter str = mingw64.StandardInput)
-                {
-                    str.WriteLine(String.Concat("cd ", ProjectUtil.currentProjectPath));
-                    str.Flush();
-
-                    str.WriteLine("make clean");
-                    str.Flush();
-                }
-
-                mingw64.WaitForExit();
-            }
         }
     }
 }
