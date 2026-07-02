@@ -13,7 +13,6 @@ namespace Raquet_Studio
     {
         public string ConsoleOutput = String.Empty;
         public string ConsoleError = String.Empty;
-        public Process ConsoleProcess;
 
         public ProjectForm()
         {
@@ -65,6 +64,12 @@ namespace Raquet_Studio
                 ScriptList.Controls.Add(scrButton);
             }
 
+            
+            //Console
+        }
+
+        void Compile(bool clean = false)
+        {
             using Process process = new Process
             {
                 StartInfo = new ProcessStartInfo
@@ -72,31 +77,29 @@ namespace Raquet_Studio
                     FileName = ProjectUtil.mingw64Path,
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
-                    RedirectStandardError = false,
+                    RedirectStandardError = true,
                     RedirectStandardInput = true,
                     //CreateNoWindow = true,
+                    Arguments = String.Concat("make", clean ? " clean" : ""),
                     WorkingDirectory = ProjectUtil.currentProjectPath
                 }
             };
-            ConsoleProcess = process;
-            ConsoleProcess.Start();
-            ConsoleProcess.StandardOutput.ReadLine(); // dispose and ill fucking rip your guts out without hesitation
-            //Console
+            //process.StandardInput.WriteLine(String.Concat("make", clean ? " clean" : ""));
+            process.Start();
+            process.WaitForExit();
+            ConsoleOutput = process.StandardOutput.ReadToEnd();
+            ConsoleError = process.StandardError.ReadToEnd();
+            
         }
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-            using (StreamWriter writer = ConsoleProcess.StandardInput)
-            {
-                if (writer.BaseStream.CanWrite)
-                {
-                    writer.WriteLine("echo Evil tip tickler mode activate");
-                }
-            }
+            Compile();
         }
 
         private void CleanRunButton_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(ConsoleError);
         }
     }
 }

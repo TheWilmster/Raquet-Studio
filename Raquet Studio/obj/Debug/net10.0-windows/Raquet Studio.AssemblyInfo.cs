@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Raquet Studio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f05027ad57df949e6d2adbd8df6daafacc331e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f36a2a7188facf14f82d26d59824a1467b372d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Raquet Studio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Raquet Studio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
