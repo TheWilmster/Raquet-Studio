@@ -11,6 +11,10 @@ namespace Raquet_Studio
 {
     public partial class ProjectForm : Form
     {
+        public string ConsoleOutput = String.Empty;
+        public string ConsoleError = String.Empty;
+        public Process ConsoleProcess;
+
         public ProjectForm()
         {
             InitializeComponent();
@@ -60,19 +64,35 @@ namespace Raquet_Studio
 
                 ScriptList.Controls.Add(scrButton);
             }
-        }
 
-        private void RunButton_Click(object sender, EventArgs e)
-        {
-            /*using Process process = new Process
+            using Process process = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = ProjectUtil.mingw64Path,
                     UseShellExecute = false,
-                    //RedirectStandardOutput
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = false,
+                    RedirectStandardInput = true,
+                    //CreateNoWindow = true,
+                    WorkingDirectory = ProjectUtil.currentProjectPath
                 }
-            };*/
+            };
+            ConsoleProcess = process;
+            ConsoleProcess.Start();
+            ConsoleProcess.StandardOutput.ReadLine(); // dispose and ill fucking rip your guts out without hesitation
+            //Console
+        }
+
+        private void RunButton_Click(object sender, EventArgs e)
+        {
+            using (StreamWriter writer = ConsoleProcess.StandardInput)
+            {
+                if (writer.BaseStream.CanWrite)
+                {
+                    writer.WriteLine("echo Evil tip tickler mode activate");
+                }
+            }
         }
 
         private void CleanRunButton_Click(object sender, EventArgs e)
