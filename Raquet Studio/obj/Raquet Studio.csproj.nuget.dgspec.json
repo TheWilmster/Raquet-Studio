@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\Raquet Studio.csproj": {}
+    "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\Raquet Studio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\Raquet Studio.csproj": {
+    "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\Raquet Studio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\Raquet Studio.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\Raquet Studio.csproj",
         "projectName": "Raquet Studio",
-        "projectPath": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\Raquet Studio.csproj",
-        "packagesPath": "C:\\Users\\wcoop\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\obj\\",
+        "projectPath": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\Raquet Studio.csproj",
+        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wcoop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,8 +25,7 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net10.0-windows": {
-            "framework": "net10.0-windows7.0",
+          "net10.0-windows7.0": {
             "targetAlias": "net10.0-windows",
             "projectReferences": {}
           }
@@ -41,11 +40,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
-        "net10.0-windows": {
-          "framework": "net10.0-windows7.0",
+        "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
           "imports": [
             "net461",
@@ -66,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

@@ -39,3 +39,25 @@ C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-wi
 C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.pdb
 C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.genruntimeconfig.cache
 C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\ref\Raquet Studio.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Resources\Template.zip
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.exe
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.deps.json
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.runtimeconfig.json
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.pdb
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.Form1.resources
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ProjectForm.resources
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.Properties.Resources.resources
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ScriptEditor.resources
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.csproj.GenerateResource.cache
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.AssemblyInfoInputs.cache
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.AssemblyInfo.cs
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.sourcelink.json
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\refint\Raquet Studio.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.pdb
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.genruntimeconfig.cache
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\ref\Raquet Studio.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Resources\BigBlueTerm437NerdFontMono-Regular.ttf

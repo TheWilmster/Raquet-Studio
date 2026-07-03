@@ -64,6 +64,10 @@ namespace Raquet_Studio
                 ScriptList.Controls.Add(scrButton);
             }
 
+            for (int i = 0; i < this.MdiChildren.Length; i++)
+            {
+
+            }
             
             //Console
         }
@@ -89,7 +93,8 @@ namespace Raquet_Studio
             process.WaitForExit();
             ConsoleOutput = process.StandardOutput.ReadToEnd();
             ConsoleError = process.StandardError.ReadToEnd();
-            
+            OutputText.Text = ConsoleOutput;
+            ErrorText.Text = ConsoleError;
         }
 
         private void RunButton_Click(object sender, EventArgs e)
