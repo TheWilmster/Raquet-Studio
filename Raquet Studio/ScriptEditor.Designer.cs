@@ -32,11 +32,12 @@
             TextField = new RichTextBox();
             SaveStatus = new Label();
             FileName = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // SaveButton
             // 
-            SaveButton.Font = new Font("BigBlueTerm437 Nerd Font Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
+            SaveButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
             SaveButton.Location = new Point(12, 12);
             SaveButton.Name = "SaveButton";
             SaveButton.Size = new Size(75, 23);
@@ -48,20 +49,21 @@
             // TextField
             // 
             TextField.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            TextField.Location = new Point(12, 41);
+            TextField.Location = new Point(36, 41);
             TextField.Name = "TextField";
-            TextField.Size = new Size(776, 397);
+            TextField.Size = new Size(752, 397);
             TextField.TabIndex = 1;
             TextField.Text = "";
+            TextField.TextChanged += TextField_TextChanged;
             // 
             // SaveStatus
             // 
             SaveStatus.AutoSize = true;
-            SaveStatus.Font = new Font("BigBlueTerm437 Nerd Font Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
+            SaveStatus.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
             SaveStatus.ForeColor = SystemColors.ControlDark;
             SaveStatus.Location = new Point(93, 15);
             SaveStatus.Name = "SaveStatus";
-            SaveStatus.Size = new Size(84, 16);
+            SaveStatus.Size = new Size(72, 20);
             SaveStatus.TabIndex = 2;
             SaveStatus.Text = "Unsaved";
             // 
@@ -69,19 +71,28 @@
             // 
             FileName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             FileName.AutoSize = true;
-            FileName.Font = new Font("BigBlueTerm437 Nerd Font Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
+            FileName.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
             FileName.Location = new Point(682, 15);
             FileName.Name = "FileName";
-            FileName.Size = new Size(106, 16);
+            FileName.Size = new Size(80, 20);
             FileName.TabIndex = 3;
             FileName.Text = "File Name";
             FileName.TextAlign = ContentAlignment.TopRight;
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(3, 41);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(24, 29);
+            textBox1.TabIndex = 4;
             // 
             // ScriptEditor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(FileName);
             Controls.Add(SaveStatus);
             Controls.Add(TextField);
@@ -99,5 +110,6 @@
         private RichTextBox TextField;
         private Label SaveStatus;
         private Label FileName;
+        private TextBox textBox1;
     }
 }

@@ -13,6 +13,7 @@ namespace Raquet_Studio
     {
         public string ConsoleOutput = String.Empty;
         public string ConsoleError = String.Empty;
+        public Process? ConsoleProcess;
 
         public ProjectForm()
         {
@@ -74,27 +75,15 @@ namespace Raquet_Studio
 
         void Compile(bool clean = false)
         {
-            using Process process = new Process
+            ConsoleProcess = new Process();
+            ConsoleProcess.StartInfo = new ProcessStartInfo
             {
-                StartInfo = new ProcessStartInfo
-                {
-                    FileName = ProjectUtil.mingw64Path,
-                    UseShellExecute = false,
-                    RedirectStandardOutput = true,
-                    RedirectStandardError = true,
-                    RedirectStandardInput = true,
-                    //CreateNoWindow = true,
-                    Arguments = String.Concat("make", clean ? " clean" : ""),
-                    WorkingDirectory = ProjectUtil.currentProjectPath
-                }
+                FileName = @"C:\msys64\mingw64.exe",
+                Arguments = "make" + (clean ? " clean" : ""),
+                WorkingDirectory = ProjectUtil.currentProjectPath,
+                UseShellExecute = false,
             };
-            //process.StandardInput.WriteLine(String.Concat("make", clean ? " clean" : ""));
-            process.Start();
-            process.WaitForExit();
-            ConsoleOutput = process.StandardOutput.ReadToEnd();
-            ConsoleError = process.StandardError.ReadToEnd();
-            OutputText.Text = ConsoleOutput;
-            ErrorText.Text = ConsoleError;
+            ConsoleProcess.Start();
         }
 
         private void RunButton_Click(object sender, EventArgs e)
@@ -104,7 +93,9 @@ namespace Raquet_Studio
 
         private void CleanRunButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(ConsoleError);
+            ConsoleProcess.StandardInput.WriteLine("exit");
+            ConsoleProcess.StandardInput.Flush();
+
         }
     }
 }
