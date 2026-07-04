@@ -23,6 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="ProjectForm.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -30,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resources\BigBlueTerm437NerdFontMono-Regular.ttf">
+    <None Update="Resources\CoolFont.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Resources\Template.zip">

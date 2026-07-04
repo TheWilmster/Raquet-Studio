@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Raquet_Studio
 {
@@ -20,7 +21,7 @@ namespace Raquet_Studio
             InitializeComponent();
         }
 
-        private async Task ScriptButton_Click(object sender, EventArgs e)
+        void ScriptButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
             string? path = ProjectUtil.scriptPaths.GetValueOrDefault(button.Text, null);
@@ -30,47 +31,70 @@ namespace Raquet_Studio
                 return;
             }
 
-            /*RichTextBox textEditor = new RichTextBox();
-            textEditor.Name = String.Concat("Editor_", button.Name);
-            textEditor.Text = File.ReadAllText(path);
-            textEditor.Parent = this;
-            textEditor.Show();*/
-
             ScriptEditor editor = new ScriptEditor(button.Text, path);
             editor.StartPosition = FormStartPosition.Manual;
             editor.Show();
+        }
 
-            //panel1.Controls.Add(editor);
+        void AssetButton_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            string? path = ProjectUtil.scriptPaths.GetValueOrDefault(button.Text, null);
+
+            //Process.Start(path);
+        }
+
+        Button CreateAssetButton(string name)
+        {
+            Button scrButton = new Button();
+            scrButton.Name = name;
+            scrButton.Font = new Font(RightTabs.Font.FontFamily, 12);
+            scrButton.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right;
+            scrButton.FlatStyle = FlatStyle.Flat;
+            scrButton.FlatAppearance.CheckedBackColor = Color.Cyan;
+            scrButton.Width = ScriptsList.Width;
+            scrButton.FlatAppearance.BorderSize = 0;
+            scrButton.TextAlign = ContentAlignment.MiddleRight;
+            scrButton.ForeColor = Color.White;
+            scrButton.Margin = new Padding(0);
+            return scrButton;
         }
 
         private void ProjectForm_Load(object sender, EventArgs e)
         {
-            Label label = new Label();
-            label.Text = "Scripts";
-            ScriptList.Controls.Add(label);
-
             string sourcePath = Path.Combine(ProjectUtil.currentProjectPath, "src");
             string[] scripts = Directory.GetFiles(sourcePath);
             for (int i = 0; i < scripts.Length; i++)
             {
-                Button scrButton = new Button();
                 string scriptName = Path.GetFileName(scripts[i]);
-                scrButton.Name = scriptName.Replace(" ", "_");
+                Button scrButton = CreateAssetButton(scriptName.Replace(" ", "_"));
                 scrButton.Text = scriptName;
-                scrButton.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+                scrButton.AccessibleName = scriptName;
+                scrButton.AccessibleDescription = "C Script";
+                scrButton.Click += ScriptButton_Click;
                 ProjectUtil.scriptPaths.Add(scriptName, scripts[i]);
 
-                scrButton.Click += delegate { ScriptButton_Click(scrButton, new EventArgs()); };
-
-                ScriptList.Controls.Add(scrButton);
+                ScriptsList.Controls.Add(scrButton);
             }
 
-            for (int i = 0; i < this.MdiChildren.Length; i++)
+            string assetsPath = Path.Combine(ProjectUtil.currentProjectPath, "assets");
+            string[] assets = Directory.GetFiles(assetsPath);
+            for (int i = 0; i < assets.Length; i++)
             {
+                string assetName = Path.GetFileName(assets[i]);
+                Button assButton = CreateAssetButton(assetName.Replace(" ", "_"));
+                assButton.Text = assetName;
+                assButton.AccessibleName = assetName;
+                assButton.AccessibleDescription = "Asset";
+                assButton.Click += AssetButton_Click;
+                ProjectUtil.scriptPaths.Add(assetName, assets[i]);
 
+                AssetsList.Controls.Add(assButton);
             }
-            
-            //Console
+
+            ActorEditor poo = new ActorEditor();
+            poo.StartPosition = FormStartPosition.CenterParent;
+            poo.Show();
         }
 
         void Compile(bool clean = false)
