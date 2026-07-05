@@ -33,6 +33,7 @@
             SaveStatus = new Label();
             FileName = new Label();
             LineNumbering = new RichTextBox();
+            UpdateHighlightingButton = new Button();
             SuspendLayout();
             // 
             // SaveButton
@@ -98,12 +99,25 @@
             LineNumbering.TabIndex = 4;
             LineNumbering.Text = "";
             // 
+            // UpdateHighlightingButton
+            // 
+            UpdateHighlightingButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            UpdateHighlightingButton.Font = new Font("SimSun", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            UpdateHighlightingButton.Location = new Point(506, 15);
+            UpdateHighlightingButton.Name = "UpdateHighlightingButton";
+            UpdateHighlightingButton.Size = new Size(170, 20);
+            UpdateHighlightingButton.TabIndex = 5;
+            UpdateHighlightingButton.Text = "Update Syntax Highlighting";
+            UpdateHighlightingButton.UseVisualStyleBackColor = true;
+            UpdateHighlightingButton.Click += UpdateHighlightingButton_Click;
+            // 
             // ScriptEditor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
             ClientSize = new Size(800, 450);
+            Controls.Add(UpdateHighlightingButton);
             Controls.Add(LineNumbering);
             Controls.Add(FileName);
             Controls.Add(SaveStatus);
@@ -123,5 +137,6 @@
         private Label SaveStatus;
         private Label FileName;
         private RichTextBox LineNumbering;
+        private Button UpdateHighlightingButton;
     }
 }

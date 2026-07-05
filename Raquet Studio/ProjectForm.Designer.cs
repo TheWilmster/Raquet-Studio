@@ -66,7 +66,7 @@ namespace Raquet_Studio
             // 
             RunButton.AccessibleDescription = "Compile and run.";
             RunButton.AccessibleName = "Run";
-            RunButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
+            RunButton.Font = new Font("SimSun", 12F);
             RunButton.Location = new Point(34, 11);
             RunButton.Name = "RunButton";
             RunButton.Size = new Size(58, 24);
@@ -79,7 +79,7 @@ namespace Raquet_Studio
             // 
             CleanRunButton.AccessibleDescription = "Completely recompile and run the game.";
             CleanRunButton.AccessibleName = "Clean Run";
-            CleanRunButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
+            CleanRunButton.Font = new Font("SimSun", 12F);
             CleanRunButton.Location = new Point(98, 11);
             CleanRunButton.Name = "CleanRunButton";
             CleanRunButton.Size = new Size(123, 24);
@@ -150,7 +150,7 @@ namespace Raquet_Studio
             // 
             HomeButton.AccessibleDescription = "Go back to the project menu.";
             HomeButton.AccessibleName = "Back";
-            HomeButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            HomeButton.Font = new Font("SimSun", 12F);
             HomeButton.Location = new Point(4, 11);
             HomeButton.Name = "HomeButton";
             HomeButton.Size = new Size(24, 24);
@@ -168,7 +168,7 @@ namespace Raquet_Studio
             RightTabs.Font = new Font("SimSun", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             RightTabs.Location = new Point(1044, 0);
             RightTabs.Name = "RightTabs";
-            RightTabs.Padding = new Point(3, 3);
+            RightTabs.Padding = new Point(8, 3);
             RightTabs.SelectedIndex = 0;
             RightTabs.Size = new Size(220, 681);
             RightTabs.TabIndex = 11;
@@ -187,16 +187,16 @@ namespace Raquet_Studio
             // 
             // ScriptsList
             // 
+            ScriptsList.AutoSize = true;
             ScriptsList.BackColor = Color.Purple;
             ScriptsList.ColumnCount = 1;
             ScriptsList.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            ScriptsList.Dock = DockStyle.Fill;
             ScriptsList.Location = new Point(3, 3);
             ScriptsList.Margin = new Padding(0);
             ScriptsList.Name = "ScriptsList";
             ScriptsList.RowCount = 1;
             ScriptsList.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            ScriptsList.Size = new Size(206, 649);
+            ScriptsList.Size = new Size(206, 24);
             ScriptsList.TabIndex = 0;
             // 
             // AssetsPage
@@ -213,16 +213,16 @@ namespace Raquet_Studio
             // 
             // AssetsList
             // 
+            AssetsList.AutoSize = true;
             AssetsList.BackColor = Color.Purple;
             AssetsList.ColumnCount = 1;
             AssetsList.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            AssetsList.Dock = DockStyle.Fill;
             AssetsList.Location = new Point(3, 3);
             AssetsList.Margin = new Padding(0);
             AssetsList.Name = "AssetsList";
             AssetsList.RowCount = 1;
             AssetsList.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            AssetsList.Size = new Size(206, 649);
+            AssetsList.Size = new Size(206, 24);
             AssetsList.TabIndex = 0;
             // 
             // ActorsPage
@@ -238,16 +238,16 @@ namespace Raquet_Studio
             // 
             // ActorsList
             // 
+            ActorsList.AutoSize = true;
             ActorsList.BackColor = Color.Purple;
             ActorsList.ColumnCount = 1;
             ActorsList.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            ActorsList.Dock = DockStyle.Fill;
             ActorsList.Location = new Point(3, 3);
             ActorsList.Margin = new Padding(0);
             ActorsList.Name = "ActorsList";
             ActorsList.RowCount = 1;
             ActorsList.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            ActorsList.Size = new Size(206, 649);
+            ActorsList.Size = new Size(206, 24);
             ActorsList.TabIndex = 1;
             // 
             // ScenesPage
@@ -263,16 +263,16 @@ namespace Raquet_Studio
             // 
             // ScenesList
             // 
+            ScenesList.AutoSize = true;
             ScenesList.BackColor = Color.Purple;
             ScenesList.ColumnCount = 1;
             ScenesList.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            ScenesList.Dock = DockStyle.Fill;
             ScenesList.Location = new Point(3, 3);
             ScenesList.Margin = new Padding(0);
             ScenesList.Name = "ScenesList";
             ScenesList.RowCount = 1;
             ScenesList.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            ScenesList.Size = new Size(206, 649);
+            ScenesList.Size = new Size(206, 24);
             ScenesList.TabIndex = 1;
             // 
             // ProjectForm
@@ -298,9 +298,13 @@ namespace Raquet_Studio
             Error.PerformLayout();
             RightTabs.ResumeLayout(false);
             ScriptsPage.ResumeLayout(false);
+            ScriptsPage.PerformLayout();
             AssetsPage.ResumeLayout(false);
+            AssetsPage.PerformLayout();
             ActorsPage.ResumeLayout(false);
+            ActorsPage.PerformLayout();
             ScenesPage.ResumeLayout(false);
+            ScenesPage.PerformLayout();
             ResumeLayout(false);
         }
         #endregion

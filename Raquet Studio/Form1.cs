@@ -5,7 +5,7 @@ namespace Raquet_Studio
 {
     public partial class Form1 : Form
     {
-        public static Form1 instance;
+        public static Form1? instance = null;
 
         public Form1()
         {

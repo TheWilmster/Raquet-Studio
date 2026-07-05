@@ -34,9 +34,6 @@ namespace Raquet_Studio
         {
             FileName.Text = scriptName;
             TextField.Text = File.ReadAllText(scriptPath);
-            TextField.SelectionStart = 2;
-            TextField.SelectionLength = 10;
-            TextField.SelectionColor = Color.Red;
             TextField.WordWrap = false;
             LineNumbering.WordWrap = false;
             int places = TextField.Lines.Length.ToString().Length;
@@ -58,9 +55,6 @@ namespace Raquet_Studio
         {
             RefreshLineNumbers();
             ScrollLineNumbering();
-            TextField.SelectionStart = 2;
-            TextField.SelectionLength = 10;
-            TextField.SelectionColor = Color.Red;
         }
 
         void RefreshLineNumbers()
@@ -95,29 +89,64 @@ namespace Raquet_Studio
 
         void UpdateSyntaxHighlighting()
         {
-            /*char[] characters = "_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".ToArray();
-            char[] script = TextField.Text.ToCharArray();
-            string current_key = String.Empty;
-            for (int i = 0; i < script.Length; i++)
-            {
-                char c = script[i];
-                
-                if (c.ToString().IsWhiteSpace())
-                {
-                    continue;
-                }
+            Point scrollPoint = Point.Empty;
+            SendMessage(TextField.Handle, EM_GETSCROLLPOS, 0, ref scrollPoint);
 
-                if (characters.Contains(c))
+            int prevSelStart = TextField.SelectionStart;
+
+            string code = TextField.Text;
+
+            for (int i = 0; i < code.Length; i++)
+            {
+                //TextField.SelectionColor = Color.White;
+
+                string c = code[i].ToString();
+
+                if (c == "/")
                 {
-                    while (characters.Contains(c))
+                    int startPos = i;
+                    i++;
+                    c = code[i].ToString();
+                    if (c == "/")
                     {
-                        c = script[i];
-                        current_key.Concat(c.ToString());
-                        i++;
+                        while (c != "\n" && (i + 1) < code.Length)
+                        {
+                            i++;
+                            c = code[i].ToString();
+                        }
+
+                        TextField.SelectionStart = startPos;
+                        TextField.SelectionLength = i - startPos;
+                        TextField.SelectionColor = Color.Green;
                     }
-                    MessageBox.Show(i);
+                    else if (c == "*")
+                    {
+                        string prevc = String.Empty;
+                        while (!(c == "/" && prevc == "*") && (i + 1) < code.Length)
+                        {
+                            prevc = c;
+                            i++;
+                            c = code[i].ToString();
+                        }
+
+                        TextField.SelectionStart = startPos;
+                        TextField.SelectionLength = (i - startPos) + 1;
+                        TextField.SelectionColor = Color.Green;
+                    }
                 }
-            }*/
+            }
+
+            TextField.SelectionLength = 0;
+            TextField.SelectionStart = prevSelStart;
+            TextField.SelectionColor = Color.White;
+
+            SendMessage(TextField.Handle, EM_SETSCROLLPOS, 0, ref scrollPoint);
+            ScrollLineNumbering();
+        }
+
+        private void UpdateHighlightingButton_Click(object sender, EventArgs e)
+        {
+            UpdateSyntaxHighlighting();
         }
     }
 }

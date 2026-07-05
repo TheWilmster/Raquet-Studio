@@ -56,7 +56,7 @@
             // 
             NewProject.BackColor = Color.FromArgb(159, 136, 166);
             NewProject.FlatStyle = FlatStyle.Popup;
-            NewProject.Font = new Font("BigBlueTerm437 Nerd Font Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
+            NewProject.Font = new Font("SimSun", 12F);
             NewProject.Location = new Point(12, 184);
             NewProject.Name = "NewProject";
             NewProject.Size = new Size(180, 24);
@@ -69,7 +69,7 @@
             // 
             LoadProject.BackColor = Color.FromArgb(159, 136, 166);
             LoadProject.FlatStyle = FlatStyle.Popup;
-            LoadProject.Font = new Font("BigBlueTerm437 Nerd Font Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
+            LoadProject.Font = new Font("SimSun", 12F);
             LoadProject.Location = new Point(12, 214);
             LoadProject.Name = "LoadProject";
             LoadProject.Size = new Size(180, 24);
@@ -92,7 +92,7 @@
             // 
             Website.BackColor = Color.FromArgb(159, 136, 166);
             Website.FlatStyle = FlatStyle.Popup;
-            Website.Font = new Font("BigBlueTerm437 Nerd Font Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
+            Website.Font = new Font("SimSun", 12F);
             Website.Location = new Point(12, 244);
             Website.Name = "Website";
             Website.Size = new Size(180, 24);
@@ -103,18 +103,18 @@
             // 
             // ProjectNameInput
             // 
-            ProjectNameInput.Font = new Font("BigBlueTerm437 Nerd Font Mono", 9F, FontStyle.Regular, GraphicsUnit.Point, 255);
-            ProjectNameInput.Location = new Point(199, 188);
+            ProjectNameInput.Font = new Font("SimSun", 12F);
+            ProjectNameInput.Location = new Point(199, 182);
             ProjectNameInput.Name = "ProjectNameInput";
             ProjectNameInput.PlaceholderText = "Project Name";
-            ProjectNameInput.Size = new Size(209, 19);
+            ProjectNameInput.Size = new Size(209, 26);
             ProjectNameInput.TabIndex = 5;
             // 
             // ConsoleButton
             // 
             ConsoleButton.BackColor = Color.FromArgb(159, 136, 166);
             ConsoleButton.FlatStyle = FlatStyle.Popup;
-            ConsoleButton.Font = new Font("BigBlueTerm437 Nerd Font Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 255);
+            ConsoleButton.Font = new Font("SimSun", 12F);
             ConsoleButton.Location = new Point(12, 274);
             ConsoleButton.Name = "ConsoleButton";
             ConsoleButton.Size = new Size(180, 24);
@@ -125,11 +125,11 @@
             // 
             // ConsolePathInput
             // 
-            ConsolePathInput.Font = new Font("BigBlueTerm437 Nerd Font Mono", 9F, FontStyle.Regular, GraphicsUnit.Point, 255);
-            ConsolePathInput.Location = new Point(199, 278);
+            ConsolePathInput.Font = new Font("SimSun", 12F);
+            ConsolePathInput.Location = new Point(199, 272);
             ConsolePathInput.Name = "ConsolePathInput";
             ConsolePathInput.PlaceholderText = "Path to your MingW64 console";
-            ConsolePathInput.Size = new Size(209, 19);
+            ConsolePathInput.Size = new Size(209, 26);
             ConsolePathInput.TabIndex = 7;
             ConsolePathInput.Text = "C:/msys64/mingw64.exe";
             // 
