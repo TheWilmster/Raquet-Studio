@@ -44,6 +44,11 @@ namespace Raquet_Studio
             //Process.Start(path);
         }
 
+        void AddActorButtonClick(object sender, EventArgs e)
+        {
+            
+        }
+
         Button CreateAssetButton(string name)
         {
             Button scrButton = new Button();
@@ -92,9 +97,11 @@ namespace Raquet_Studio
                 AssetsList.Controls.Add(assButton);
             }
 
-            ActorEditor poo = new ActorEditor();
-            poo.StartPosition = FormStartPosition.CenterParent;
-            poo.Show();
+            Button addActorButton = CreateAssetButton("CreateActorButton");
+            addActorButton.Text = "Create Actor";
+            addActorButton.Click += AddActorButtonClick;
+
+            ActorsList.Controls.Add(addActorButton);
         }
 
         void Compile(bool clean = false)
