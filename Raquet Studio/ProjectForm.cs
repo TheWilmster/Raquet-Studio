@@ -5,8 +5,10 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Text;
+using System.Text.Json;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
+using static Microsoft.VisualBasic.Interaction;
 
 namespace Raquet_Studio
 {
@@ -44,9 +46,35 @@ namespace Raquet_Studio
             //Process.Start(path);
         }
 
-        void AddActorButtonClick(object sender, EventArgs e)
+        void ActorButton_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        void AddActorButton_Click(object sender, EventArgs e)
+        {
+            string name = InputBox("What would you like the name of this actor to be?", "Raquet Studio");
+
+            ProjectUtil.CheckStudioAssetsFolder();
+
+            string actorsPath = Path.Combine(ProjectUtil.studioAssetsFolder, "Actors");
+            Process.Start("explorer.exe", actorsPath);
+            RaquetActor actor = new RaquetActor();
+            string serializedActor = JsonSerializer.Serialize(actor);
+
+            string actorPath = Path.Combine(actorsPath, String.Concat(name, ".rqactor"));
+            if (File.Exists(actorPath))
+            {
+                DialogResult result = MessageBox.Show("This actor already exists. Would you like to overwrite it?", "Raquet Studio", MessageBoxButtons.YesNo);
+                if (result == DialogResult.No)
+                {
+                    return;
+                }
+            }
+
+            File.WriteAllText(actorPath, serializedActor);
+
+            RefreshActorList();
         }
 
         Button CreateAssetButton(string name)
@@ -97,11 +125,34 @@ namespace Raquet_Studio
                 AssetsList.Controls.Add(assButton);
             }
 
+            RefreshActorList();
+        }
+
+        void RefreshActorList()
+        {
+            ActorsList.Controls.Clear();
+
             Button addActorButton = CreateAssetButton("CreateActorButton");
             addActorButton.Text = "Create Actor";
-            addActorButton.Click += AddActorButtonClick;
+            addActorButton.Click += AddActorButton_Click;
 
             ActorsList.Controls.Add(addActorButton);
+
+            string actorsPath = Path.Combine(ProjectUtil.studioAssetsFolder, "Actors");
+            ProjectUtil.CheckStudioAssetsFolder();
+            string[] actors = Directory.GetFiles(actorsPath);
+            foreach (string actor in actors)
+            {
+                string actorName = Path.GetFileName(actor);
+                Button actButton = CreateAssetButton(actorName.Replace(" ", "_"));
+                actButton.Text = actorName;
+                actButton.AccessibleName = actorName;
+                actButton.AccessibleDescription = "Actor";
+                actButton.Click += ActorButton_Click;
+                ProjectUtil.scriptPaths.Add(actorName, actor);
+
+                AssetsList.Controls.Add(actButton);
+            }
         }
 
         void Compile(bool clean = false)

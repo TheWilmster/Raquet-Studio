@@ -13,6 +13,7 @@ namespace Raquet_Studio
         public static string mingw64Path = @"C:\msys64\mingw64.exe";
 
         public static string currentProjectPath = String.Empty;
+        public static string studioAssetsFolder = Path.Combine(currentProjectPath, ".raqstdio");
         public static Dictionary<string, string> scriptPaths = new Dictionary<string, string>();
         
         static PrivateFontCollection coolFontCol = new PrivateFontCollection();
@@ -25,6 +26,31 @@ namespace Raquet_Studio
             coolFontCol.AddFontFile(coolFontDir);
             coolFontFam = new FontFamily("BigBlueTerm437 Nerd Font Mono", coolFontCol);
             coolFont = new Font(coolFontFam, coolFontFam.GetEmHeight(FontStyle.Regular));
+        }
+
+        public static void CheckStudioAssetsFolder()
+        {
+            if (!Directory.Exists(studioAssetsFolder))
+            {
+                Directory.CreateDirectory(studioAssetsFolder).Attributes = FileAttributes.Directory | FileAttributes.Hidden;
+            }
+            else
+            {
+                new DirectoryInfo(studioAssetsFolder).Attributes = FileAttributes.Directory | FileAttributes.Hidden;
+            };
+
+            string[] assetTypes = [
+                "Actors",
+                "Scenes"
+            ];
+
+            foreach (string assetType in assetTypes) {
+                string path = Path.Combine(studioAssetsFolder, assetType);
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+            }
         }
     }
 }
