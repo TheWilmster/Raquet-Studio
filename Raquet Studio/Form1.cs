@@ -15,11 +15,12 @@ namespace Raquet_Studio
             {
                 instance = this;
             }
+            instance.Text = "Raquet Studio";
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void SwitchToProjectForm()

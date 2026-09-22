@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Raquet_Studio
 {
@@ -19,6 +20,66 @@ namespace Raquet_Studio
         const int SB_VERT = 1;
         private const int EM_SETSCROLLPOS = WM_USER + 222;
         private const int EM_GETSCROLLPOS = WM_USER + 221;
+
+        const string alphabet = "_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        const string digits = "1234567890";
+        string[] keywords = [
+            "auto",
+            "break",
+            "case",
+            "char",
+            "const",
+            "continue",
+            "default",
+            "do",
+            "double",
+            "else",
+            "enum",
+            "extern",
+            "float",
+            "for",
+            "goto",
+            "if",
+            "inline",
+            "int",
+            "long",
+            "register",
+            "restrict",
+            "return",
+            "short",
+            "signed",
+            "sizeof",
+            "static",
+            "struct",
+            "switch",
+            "typedef",
+            "union",
+            "unsigned",
+            "void",
+            "volatile",
+            "while",
+            "_Bool",
+            "_Complex",
+            "_Imaginary",
+            "__asm__",
+            "__asm",
+            "asm"
+        ];
+        string[] preprocKeywords = [
+            "if",
+            "elif",
+            "else",
+            "endif",
+            "ifdef",
+            "ifndef",
+            "define",
+            "undef",
+            "include",
+            "line",
+            "error",
+            "pragma",
+            "defined"
+        ];
 
         [DllImport("user32.dll")]
         static extern IntPtr SendMessage(IntPtr hWnd, int wMsg, int wParam, ref Point lParam);
@@ -37,7 +98,7 @@ namespace Raquet_Studio
             TextField.WordWrap = false;
             LineNumbering.WordWrap = false;
             int places = TextField.Lines.Length.ToString().Length;
-            LineNumbering.Width = places * 12;
+            LineNumbering.Width = (places * 11) + 4;
             SaveStatus.Text = "Unsaved";
             TextField.Location = new Point(LineNumbering.Location.X + LineNumbering.Width, TextField.Location.Y);
             TextField.Width = 776 - LineNumbering.Width;
@@ -96,11 +157,20 @@ namespace Raquet_Studio
 
             string code = TextField.Text;
 
+            Color c_number = Color.FromArgb(236, 138, 131);
+            Color c_keyword = Color.FromArgb(169, 131, 216);
+            Color c_usertype = Color.FromArgb(106, 180, 241);
+            Color c_preprockey = Color.FromArgb(255, 173, 133);
+            Color c_comment = Color.FromArgb(139, 229, 157);
+            Color c_string = Color.FromArgb(249, 241, 118);
+
+            //string storedKey = string.Empty;
+
             for (int i = 0; i < code.Length; i++)
             {
                 //TextField.SelectionColor = Color.White;
 
-                string c = code[i].ToString();
+                string? c = code[i].ToString();
 
                 if (c == "/")
                 {
@@ -111,28 +181,78 @@ namespace Raquet_Studio
                     {
                         while (c != "\n" && (i + 1) < code.Length)
                         {
-                            i++;
-                            c = code[i].ToString();
+                            c = code[++i].ToString();
                         }
 
                         TextField.SelectionStart = startPos;
                         TextField.SelectionLength = i - startPos;
-                        TextField.SelectionColor = Color.Green;
+                        TextField.SelectionColor = c_comment;
                     }
                     else if (c == "*")
                     {
-                        string prevc = String.Empty;
+                        string prevc = string.Empty;
                         while (!(c == "/" && prevc == "*") && (i + 1) < code.Length)
                         {
                             prevc = c;
-                            i++;
-                            c = code[i].ToString();
+                            c = code[++i].ToString();
                         }
 
                         TextField.SelectionStart = startPos;
                         TextField.SelectionLength = (i - startPos) + 1;
-                        TextField.SelectionColor = Color.Green;
+                        TextField.SelectionColor = c_comment;
                     }
+                }
+                if (alphabet.Contains(c) || c == "#")
+                {
+                    Color col = c_keyword;
+                    int startPos = i;
+                    if (c == "#")
+                    {
+                        col = c_preprockey;
+                        c = code[++i].ToString();
+                    }
+                    string key = string.Empty;
+                    while (alphabet.Contains(c) || digits.Contains(c))
+                    {
+                        key += c;
+                        c = code[++i].ToString();
+                    }
+                    if ((keywords.Contains(key) && col == c_keyword) || (preprocKeywords.Contains(key) && col == c_preprockey))
+                    {
+                        TextField.SelectionStart = startPos;
+                        TextField.SelectionLength = i - startPos;
+                        TextField.SelectionColor = col;
+                    }
+                }
+                if (c == "\"" || c == "\'")
+                {
+                    string startChar = c;
+                    int startPos = i;
+                    c = code[++i].ToString();
+                    string str = string.Empty;
+                    while (c != startChar)
+                    {
+                        str += c;
+                        c = code[++i].ToString();
+                    }
+                    ++i;
+                    TextField.SelectionStart = startPos;
+                    TextField.SelectionLength = i - startPos;
+                    TextField.SelectionColor = c_string;
+                }
+                if (digits.Contains(c))
+                {
+                    int startPos = i;
+                    string key = string.Empty;
+                    while (digits.Contains(c))
+                    {
+                        key += c;
+                        i++;
+                        c = code[i].ToString();
+                    }
+                    TextField.SelectionStart = startPos;
+                    TextField.SelectionLength = i - startPos;
+                    TextField.SelectionColor = c_number;
                 }
             }
 

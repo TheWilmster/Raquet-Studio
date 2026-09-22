@@ -28,11 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            PositionLabel = new Label();
-            StartPosX = new NumericUpDown();
-            StartPosXLabel = new Label();
-            StartPosYLabel = new Label();
-            StartPosY = new NumericUpDown();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActorEditor));
             OriginYLabel = new Label();
             OriginY = new NumericUpDown();
             OriginXLabel = new Label();
@@ -44,66 +40,23 @@
             label1 = new Label();
             AngleInput = new NumericUpDown();
             AngleLabel = new Label();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)StartPosX).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)StartPosY).BeginInit();
+            pictureBox2 = new PictureBox();
+            EventList = new ListBox();
+            AddEvent = new Button();
+            EventsLabel = new Label();
+            DeleteEvent = new Button();
+            EditEvent = new Button();
             ((System.ComponentModel.ISupportInitialize)OriginY).BeginInit();
             ((System.ComponentModel.ISupportInitialize)OriginX).BeginInit();
             ((System.ComponentModel.ISupportInitialize)AngleInput).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // PositionLabel
-            // 
-            PositionLabel.AutoSize = true;
-            PositionLabel.Font = new Font("SimSun", 12F, FontStyle.Underline);
-            PositionLabel.Location = new Point(10, 41);
-            PositionLabel.Name = "PositionLabel";
-            PositionLabel.Size = new Size(143, 16);
-            PositionLabel.TabIndex = 0;
-            PositionLabel.Text = "Starting Position";
-            // 
-            // StartPosX
-            // 
-            StartPosX.Font = new Font("SimSun", 12F);
-            StartPosX.Location = new Point(33, 60);
-            StartPosX.Name = "StartPosX";
-            StartPosX.Size = new Size(48, 26);
-            StartPosX.TabIndex = 1;
-            // 
-            // StartPosXLabel
-            // 
-            StartPosXLabel.AutoSize = true;
-            StartPosXLabel.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            StartPosXLabel.Location = new Point(10, 60);
-            StartPosXLabel.Name = "StartPosXLabel";
-            StartPosXLabel.Size = new Size(23, 16);
-            StartPosXLabel.TabIndex = 3;
-            StartPosXLabel.Text = "x:";
-            // 
-            // StartPosYLabel
-            // 
-            StartPosYLabel.AutoSize = true;
-            StartPosYLabel.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            StartPosYLabel.Location = new Point(87, 60);
-            StartPosYLabel.Name = "StartPosYLabel";
-            StartPosYLabel.Size = new Size(23, 16);
-            StartPosYLabel.TabIndex = 5;
-            StartPosYLabel.Text = "y:";
-            // 
-            // StartPosY
-            // 
-            StartPosY.Font = new Font("SimSun", 12F);
-            StartPosY.Location = new Point(108, 60);
-            StartPosY.Name = "StartPosY";
-            StartPosY.Size = new Size(48, 26);
-            StartPosY.TabIndex = 4;
             // 
             // OriginYLabel
             // 
             OriginYLabel.AutoSize = true;
             OriginYLabel.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            OriginYLabel.Location = new Point(87, 122);
+            OriginYLabel.Location = new Point(102, 137);
             OriginYLabel.Name = "OriginYLabel";
             OriginYLabel.Size = new Size(23, 16);
             OriginYLabel.TabIndex = 10;
@@ -112,16 +65,17 @@
             // OriginY
             // 
             OriginY.Font = new Font("SimSun", 12F);
-            OriginY.Location = new Point(108, 122);
+            OriginY.Location = new Point(131, 137);
             OriginY.Name = "OriginY";
             OriginY.Size = new Size(48, 26);
             OriginY.TabIndex = 9;
+            OriginY.ValueChanged += OriginY_ValueChanged;
             // 
             // OriginXLabel
             // 
             OriginXLabel.AutoSize = true;
             OriginXLabel.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            OriginXLabel.Location = new Point(10, 122);
+            OriginXLabel.Location = new Point(14, 137);
             OriginXLabel.Name = "OriginXLabel";
             OriginXLabel.Size = new Size(23, 16);
             OriginXLabel.TabIndex = 8;
@@ -130,16 +84,17 @@
             // OriginX
             // 
             OriginX.Font = new Font("SimSun", 12F);
-            OriginX.Location = new Point(33, 122);
+            OriginX.Location = new Point(43, 137);
             OriginX.Name = "OriginX";
             OriginX.Size = new Size(48, 26);
             OriginX.TabIndex = 7;
+            OriginX.ValueChanged += OriginX_ValueChanged;
             // 
             // OriginLabel
             // 
             OriginLabel.AutoSize = true;
             OriginLabel.Font = new Font("SimSun", 12F, FontStyle.Underline);
-            OriginLabel.Location = new Point(10, 103);
+            OriginLabel.Location = new Point(14, 112);
             OriginLabel.Name = "OriginLabel";
             OriginLabel.Size = new Size(55, 16);
             OriginLabel.TabIndex = 6;
@@ -149,10 +104,10 @@
             // 
             FileName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             FileName.AutoSize = true;
-            FileName.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            FileName.Location = new Point(266, 15);
+            FileName.Font = new Font("SimSun", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            FileName.Location = new Point(15, 71);
             FileName.Name = "FileName";
-            FileName.Size = new Size(79, 16);
+            FileName.Size = new Size(88, 16);
             FileName.TabIndex = 13;
             FileName.Text = "File Name";
             FileName.TextAlign = ContentAlignment.TopRight;
@@ -162,7 +117,7 @@
             SaveStatus.AutoSize = true;
             SaveStatus.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             SaveStatus.ForeColor = Color.MediumOrchid;
-            SaveStatus.Location = new Point(93, 15);
+            SaveStatus.Location = new Point(106, 16);
             SaveStatus.Name = "SaveStatus";
             SaveStatus.Size = new Size(63, 16);
             SaveStatus.TabIndex = 12;
@@ -171,18 +126,19 @@
             // SaveButton
             // 
             SaveButton.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            SaveButton.Location = new Point(12, 12);
+            SaveButton.Location = new Point(14, 13);
             SaveButton.Name = "SaveButton";
-            SaveButton.Size = new Size(75, 23);
+            SaveButton.Size = new Size(86, 25);
             SaveButton.TabIndex = 11;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(101, 185);
+            label1.Location = new Point(115, 197);
             label1.Name = "label1";
             label1.Size = new Size(0, 16);
             label1.TabIndex = 14;
@@ -190,37 +146,102 @@
             // AngleInput
             // 
             AngleInput.Font = new Font("SimSun", 12F);
-            AngleInput.Location = new Point(71, 166);
+            AngleInput.Location = new Point(75, 177);
             AngleInput.Name = "AngleInput";
             AngleInput.Size = new Size(48, 26);
             AngleInput.TabIndex = 16;
+            AngleInput.ValueChanged += AngleInput_ValueChanged;
             // 
             // AngleLabel
             // 
             AngleLabel.AutoSize = true;
             AngleLabel.Font = new Font("SimSun", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            AngleLabel.Location = new Point(10, 166);
+            AngleLabel.Location = new Point(14, 179);
             AngleLabel.Name = "AngleLabel";
             AngleLabel.Size = new Size(55, 16);
             AngleLabel.TabIndex = 15;
             AngleLabel.Text = "Angle:";
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            pictureBox1.Location = new Point(244, 73);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(128, 128);
-            pictureBox1.TabIndex = 17;
-            pictureBox1.TabStop = false;
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(439, 64);
+            pictureBox2.TabIndex = 18;
+            pictureBox2.TabStop = false;
+            // 
+            // EventList
+            // 
+            EventList.FormattingEnabled = true;
+            EventList.Location = new Point(187, 91);
+            EventList.Name = "EventList";
+            EventList.Size = new Size(237, 100);
+            EventList.TabIndex = 19;
+            EventList.SelectedIndexChanged += EventList_SelectedIndexChanged;
+            // 
+            // AddEvent
+            // 
+            AddEvent.BackColor = Color.LemonChiffon;
+            AddEvent.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddEvent.ForeColor = Color.Purple;
+            AddEvent.Location = new Point(187, 192);
+            AddEvent.Name = "AddEvent";
+            AddEvent.Size = new Size(79, 29);
+            AddEvent.TabIndex = 20;
+            AddEvent.Text = "Add";
+            AddEvent.UseVisualStyleBackColor = false;
+            AddEvent.Click += AddEvent_Click;
+            // 
+            // EventsLabel
+            // 
+            EventsLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            EventsLabel.AutoSize = true;
+            EventsLabel.Font = new Font("SimSun", 12F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
+            EventsLabel.Location = new Point(187, 71);
+            EventsLabel.Name = "EventsLabel";
+            EventsLabel.Size = new Size(55, 16);
+            EventsLabel.TabIndex = 21;
+            EventsLabel.Text = "Events";
+            EventsLabel.TextAlign = ContentAlignment.TopRight;
+            // 
+            // DeleteEvent
+            // 
+            DeleteEvent.BackColor = Color.Purple;
+            DeleteEvent.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DeleteEvent.ForeColor = Color.LemonChiffon;
+            DeleteEvent.Location = new Point(346, 192);
+            DeleteEvent.Name = "DeleteEvent";
+            DeleteEvent.Size = new Size(79, 29);
+            DeleteEvent.TabIndex = 22;
+            DeleteEvent.Text = "Delete";
+            DeleteEvent.UseVisualStyleBackColor = false;
+            // 
+            // EditEvent
+            // 
+            EditEvent.BackColor = Color.White;
+            EditEvent.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            EditEvent.ForeColor = SystemColors.MenuText;
+            EditEvent.Location = new Point(266, 192);
+            EditEvent.Name = "EditEvent";
+            EditEvent.Size = new Size(80, 29);
+            EditEvent.TabIndex = 23;
+            EditEvent.Text = "Edit";
+            EditEvent.UseVisualStyleBackColor = false;
+            EditEvent.Click += EditEvent_Click;
             // 
             // ActorEditor
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
-            ClientSize = new Size(384, 217);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(439, 231);
+            Controls.Add(EditEvent);
+            Controls.Add(DeleteEvent);
+            Controls.Add(EventsLabel);
+            Controls.Add(AddEvent);
+            Controls.Add(EventList);
             Controls.Add(AngleInput);
             Controls.Add(AngleLabel);
             Controls.Add(label1);
@@ -232,30 +253,19 @@
             Controls.Add(OriginXLabel);
             Controls.Add(OriginX);
             Controls.Add(OriginLabel);
-            Controls.Add(StartPosYLabel);
-            Controls.Add(StartPosY);
-            Controls.Add(StartPosXLabel);
-            Controls.Add(StartPosX);
-            Controls.Add(PositionLabel);
+            Controls.Add(pictureBox2);
+            Font = new Font("SimSun", 12F);
             Name = "ActorEditor";
             Text = "Actor Editor";
-            ((System.ComponentModel.ISupportInitialize)StartPosX).EndInit();
-            ((System.ComponentModel.ISupportInitialize)StartPosY).EndInit();
             ((System.ComponentModel.ISupportInitialize)OriginY).EndInit();
             ((System.ComponentModel.ISupportInitialize)OriginX).EndInit();
             ((System.ComponentModel.ISupportInitialize)AngleInput).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label PositionLabel;
-        private NumericUpDown StartPosX;
-        private Label StartPosXLabel;
-        private Label StartPosYLabel;
-        private NumericUpDown StartPosY;
         private Label OriginYLabel;
         private NumericUpDown OriginY;
         private Label OriginXLabel;
@@ -267,6 +277,11 @@
         private Label label1;
         private NumericUpDown AngleInput;
         private Label AngleLabel;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private ListBox EventList;
+        private Button AddEvent;
+        private Label EventsLabel;
+        private Button DeleteEvent;
+        private Button EditEvent;
     }
 }
