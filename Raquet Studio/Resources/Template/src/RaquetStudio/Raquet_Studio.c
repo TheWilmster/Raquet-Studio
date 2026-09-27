@@ -2,54 +2,53 @@
 #include "Raquet_Studio.h"
 #include <stdio.h>
 #include <string.h>
+#include <sys/types.h>
 #include <sys/stat.h>
 
 Raquet_Event_Function RaquetStudio_GetEventFunction(int id) {
     return __Raquet_Event_Table[id];
 }
 
-void RaquetStudio_AnalyzeDataPack(const char* path) {
+int RaquetStudio_AnalyzeDataPack(const char* path) {
     FILE* stream = fopen(path, "r");
     if (stream == NULL) {
         printf("oops !\n");
-        return; // ooouuuu shi
+        fclose(stream);
+        return -1; // ooouuuu shi
     }
 
-    struct stat file_status;
-    if (stat(path, &file_status) < 0) {
-        return;
+    struct _stat file_status;
+    if (_stat(path, &file_status) < 0) {
+        fclose(stream);
+        return -1;
     }
 
     long filesize = file_status.st_size;
-    char string[filesize];
-    fgets(string, filesize, stream);
+    char header[10];
+    const char* actualHeader = "RAQSTUDIO";
+    fgets(header, 10, stream);
 
-    /*printf("Successfully loaded Raquet Studio binary data!\n");
-    printf("%s", string);
-    printf("\n");*/
+    for (int i = 0; i < 10; i++) {
+        char a = header[i];
+        char b = actualHeader[i];
 
-    if (filesize < 9) {
-        return;
-    }
-
-    char header[9];
-    strncpy(header, string, 9);
-
-    if (strcmp(header, "RAQSTUDIO")) {
-        printf("Bitch either your file is corrupted or this is NOT a raquet studio binary file.\n");
-        return;
+        if (a != b) {
+            printf("%c does not match %c lowkey lowkey\n", a, b);
+            fclose(stream);
+            return -1;
+        }
     }
 
     int bytecodeVersion = fgetc(stream);
 
-    while (ftell(stream) < filsize) {
-        char chunkID[3];
-        fgets(chunkID, 3, stream);
+    printf("%s", header);
+    printf("\n");
+    printf("Bytecode version is %d", bytecodeVersion);
+    printf("\n");
 
-        if (strcmp(chunkID, "ACT")) {
-            
-        }
-    }
+    int chunkCount = fgetc(stream);
 
     fclose(stream);
+
+    return 0;
 }

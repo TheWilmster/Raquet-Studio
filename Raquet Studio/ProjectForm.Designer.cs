@@ -279,7 +279,7 @@ namespace Raquet_Studio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(245, 209, 255);
+            BackColor = Color.Thistle;
             ClientSize = new Size(1264, 681);
             Controls.Add(HomeButton);
             Controls.Add(BottomTabs);
@@ -287,8 +287,10 @@ namespace Raquet_Studio
             Controls.Add(RunButton);
             Controls.Add(RightTabs);
             Controls.Add(pictureBox2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ProjectForm";
-            Text = "ProjectForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Raquet Studio";
             Load += ProjectForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             BottomTabs.ResumeLayout(false);

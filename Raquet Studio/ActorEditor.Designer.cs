@@ -54,6 +54,7 @@
             // 
             // OriginYLabel
             // 
+            OriginYLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             OriginYLabel.AutoSize = true;
             OriginYLabel.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             OriginYLabel.Location = new Point(102, 137);
@@ -64,6 +65,7 @@
             // 
             // OriginY
             // 
+            OriginY.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             OriginY.Font = new Font("SimSun", 12F);
             OriginY.Location = new Point(131, 137);
             OriginY.Name = "OriginY";
@@ -73,6 +75,7 @@
             // 
             // OriginXLabel
             // 
+            OriginXLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             OriginXLabel.AutoSize = true;
             OriginXLabel.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             OriginXLabel.Location = new Point(14, 137);
@@ -83,6 +86,7 @@
             // 
             // OriginX
             // 
+            OriginX.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             OriginX.Font = new Font("SimSun", 12F);
             OriginX.Location = new Point(43, 137);
             OriginX.Name = "OriginX";
@@ -92,6 +96,7 @@
             // 
             // OriginLabel
             // 
+            OriginLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             OriginLabel.AutoSize = true;
             OriginLabel.Font = new Font("SimSun", 12F, FontStyle.Underline);
             OriginLabel.Location = new Point(14, 112);
@@ -102,7 +107,6 @@
             // 
             // FileName
             // 
-            FileName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             FileName.AutoSize = true;
             FileName.Font = new Font("SimSun", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
             FileName.Location = new Point(15, 71);
@@ -145,6 +149,7 @@
             // 
             // AngleInput
             // 
+            AngleInput.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             AngleInput.Font = new Font("SimSun", 12F);
             AngleInput.Location = new Point(75, 177);
             AngleInput.Name = "AngleInput";
@@ -154,6 +159,7 @@
             // 
             // AngleLabel
             // 
+            AngleLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             AngleLabel.AutoSize = true;
             AngleLabel.Font = new Font("SimSun", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
             AngleLabel.Location = new Point(14, 179);
@@ -164,8 +170,8 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.Dock = DockStyle.Top;
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(439, 64);
@@ -174,6 +180,7 @@
             // 
             // EventList
             // 
+            EventList.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             EventList.FormattingEnabled = true;
             EventList.Location = new Point(187, 91);
             EventList.Name = "EventList";
@@ -183,6 +190,7 @@
             // 
             // AddEvent
             // 
+            AddEvent.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             AddEvent.BackColor = Color.LemonChiffon;
             AddEvent.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             AddEvent.ForeColor = Color.Purple;
@@ -196,7 +204,7 @@
             // 
             // EventsLabel
             // 
-            EventsLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            EventsLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             EventsLabel.AutoSize = true;
             EventsLabel.Font = new Font("SimSun", 12F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
             EventsLabel.Location = new Point(187, 71);
@@ -208,6 +216,7 @@
             // 
             // DeleteEvent
             // 
+            DeleteEvent.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             DeleteEvent.BackColor = Color.Purple;
             DeleteEvent.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             DeleteEvent.ForeColor = Color.LemonChiffon;
@@ -220,6 +229,7 @@
             // 
             // EditEvent
             // 
+            EditEvent.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             EditEvent.BackColor = Color.White;
             EditEvent.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             EditEvent.ForeColor = SystemColors.MenuText;
@@ -255,8 +265,10 @@
             Controls.Add(OriginLabel);
             Controls.Add(pictureBox2);
             Font = new Font("SimSun", 12F);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ActorEditor";
             Text = "Actor Editor";
+            TopMost = true;
             ((System.ComponentModel.ISupportInitialize)OriginY).EndInit();
             ((System.ComponentModel.ISupportInitialize)OriginX).EndInit();
             ((System.ComponentModel.ISupportInitialize)AngleInput).EndInit();

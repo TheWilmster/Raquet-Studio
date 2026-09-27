@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScriptEditor));
             SaveButton = new Button();
             TextField = new RichTextBox();
             SaveStatus = new Label();
             FileName = new Label();
             LineNumbering = new RichTextBox();
             UpdateHighlightingButton = new Button();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // SaveButton
@@ -65,6 +68,7 @@
             // SaveStatus
             // 
             SaveStatus.AutoSize = true;
+            SaveStatus.BackColor = Color.Transparent;
             SaveStatus.Font = new Font("SimSun", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             SaveStatus.ForeColor = Color.MediumOrchid;
             SaveStatus.Location = new Point(93, 15);
@@ -111,6 +115,16 @@
             UpdateHighlightingButton.UseVisualStyleBackColor = true;
             UpdateHighlightingButton.Click += UpdateHighlightingButton_Click;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.Dock = DockStyle.Top;
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(800, 64);
+            pictureBox2.TabIndex = 19;
+            pictureBox2.TabStop = false;
+            // 
             // ScriptEditor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -123,9 +137,13 @@
             Controls.Add(SaveStatus);
             Controls.Add(TextField);
             Controls.Add(SaveButton);
+            Controls.Add(pictureBox2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ScriptEditor";
             Text = "Script Editor";
+            TopMost = true;
             Load += ScriptEditor_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -138,5 +156,6 @@
         private Label FileName;
         private RichTextBox LineNumbering;
         private Button UpdateHighlightingButton;
+        internal PictureBox pictureBox2;
     }
 }

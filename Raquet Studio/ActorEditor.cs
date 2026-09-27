@@ -13,6 +13,7 @@ namespace Raquet_Studio
 {
     public partial class ActorEditor : Form
     {
+        EventSelector? selector = null;
         public string actorPath;
         RaquetActor actor;
         public ActorEditor(RaquetActor actor, string directory)
@@ -66,9 +67,13 @@ namespace Raquet_Studio
 
         private void AddEvent_Click(object sender, EventArgs e)
         {
-            EventSelector selector = new(this);
-            selector.StartPosition = FormStartPosition.Manual;
-            selector.Show();
+            if (selector == null) return;
+
+            selector = new(this)
+            {
+                StartPosition = FormStartPosition.Manual
+            };
+            new Border98(selector);
         }
 
         public void AddEventType(EventType type)
@@ -114,7 +119,7 @@ namespace Raquet_Studio
             ScriptEditor editor = new ScriptEditor(String.Concat(actor.name, " ", eventName, " Event"), filePath);
             editor.StartPosition = FormStartPosition.Manual;
             editor.FormBorderStyle = FormBorderStyle.Fixed3D;
-            editor.Show();
+            new Border98(editor);
         }
     }
 

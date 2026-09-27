@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing.Imaging.Effects;
 using System.Drawing.Text;
 using System.Text;
@@ -21,16 +22,66 @@ namespace Raquet_Studio
         public static Dictionary<string, string> scriptPaths = new Dictionary<string, string>();
         public static Dictionary<string, string> actorPaths = new Dictionary<string, string>();
         public static Dictionary<int, string> dynaFuncs = new Dictionary<int, string>(); // list of generated functions used for actor events n' shit
-        static PrivateFontCollection coolFontCol = new PrivateFontCollection();
-        static string coolFontDir = Path.Combine(resourcesPath, "CoolFont.ttf");
-        static FontFamily coolFontFam;
-        public static Font coolFont;
-        
-        static ProjectUtil()
+
+        public static List<byte[]>? LoadPPF(string directory)
         {
-            coolFontCol.AddFontFile(coolFontDir);
-            coolFontFam = new FontFamily("BigBlueTerm437 Nerd Font Mono", coolFontCol);
-            coolFont = new Font(coolFontFam, coolFontFam.GetEmHeight(FontStyle.Regular));
+            FileStream stream = File.OpenRead(directory);
+            BinaryReader reader = new(stream);
+
+            char[] header = reader.ReadChars(4);
+            //MessageBox.Show(string.Concat("\"", new string(header), "\""));
+            if (new string(header) != "PPFv")
+                return null;
+            /*uint version = */reader.ReadUInt32();
+
+            List<byte[]> tiles = [];
+            while (reader.BaseStream.Position < reader.BaseStream.Length)
+            {
+                byte[] tile = reader.ReadBytes(16);
+                tiles.Add(tile);
+            }
+            
+            return tiles;
+        }
+
+        public static Bitmap RenderCHR(byte[] tile, int width, int height, Color[] palette)
+        {
+            int col;
+
+            int baseWidth = 8;
+            int baseHeight = 8;
+            Bitmap bmp = new(width, height);
+            float xscale = width / baseWidth;
+            float yscale = height / baseHeight;
+
+            if (tile.Length < 16)
+            {
+                return bmp;
+            }
+
+            byte[] halfA = new byte[8];
+            byte[] halfB = new byte[8];
+            Array.Copy(tile, halfA, 8);
+            Array.Copy(tile, 8, halfB, 0, 8);
+
+            for (int y = 0; y < (halfA.Length * yscale); y++)
+            {
+                int yy = (int)(y / yscale);
+                byte byteA = halfA[yy];
+                byte byteB = halfB[yy];
+
+                for (int x = 0; x < (8 * xscale); x++)
+                {
+                    int xx = (int)(x / xscale);
+                    bool aIsSet = (byteA & (1 << xx)) != 0;
+                    bool bIsSet = (byteB & (1 << xx)) != 0;
+
+                    col = (aIsSet?1:0) + (bIsSet?2:0);
+                    bmp.SetPixel(width - 1 - x, y, palette[col]);
+                }
+            }
+            
+            return bmp;
         }
 
         public static void CheckStudioAssetsFolder()

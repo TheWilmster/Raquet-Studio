@@ -45,7 +45,6 @@ C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-wi
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.runtimeconfig.json
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.dll
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Raquet Studio.pdb
-C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.Form1.resources
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ProjectForm.resources
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.Properties.Resources.resources
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ScriptEditor.resources
@@ -60,9 +59,26 @@ C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-wi
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.pdb
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.genruntimeconfig.cache
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\ref\Raquet Studio.dll
-C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Resources\CoolFont.ttf
 C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ActorEditor.resources
 C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.ActorEditor.resources
 C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.EventSelector.resources
 C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\bin\Debug\net10.0-windows\Resources\CoolFont.ttf
 C:\Users\wcoop\Documents\GitHub\Raquet Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet S.CF7A3221.Up2Date
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.EventSelector.resources
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet S.CF7A3221.Up2Date
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.PPFEditor.resources
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.MainForm.resources
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.SplashScreen.resources
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.Border98.resources
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Resources\Fonts\micross.ttf
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.Core.xml
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet Studio.csproj.AssemblyReference.cache
+C:\Users\Owner\Documents\GitHub\Raquet-Studio\Raquet Studio\obj\Debug\net10.0-windows\Raquet_Studio.WebViewForm.resources

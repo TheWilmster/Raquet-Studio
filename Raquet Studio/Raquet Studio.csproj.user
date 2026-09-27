@@ -4,16 +4,28 @@
     <Compile Update="ActorEditor.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Border98.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="EventSelector.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PPFEditor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ScriptEditor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WebViewForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

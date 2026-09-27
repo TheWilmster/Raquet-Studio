@@ -5,9 +5,9 @@
 
 Raquet_Event_Function RaquetStudio_GetEventFunction(int id);
 
-void RaquetStudio_AnalyzeDataPack(const char* path);
+int RaquetStudio_AnalyzeDataPack(const char* path);
 
-typedef struct RaquetStudio_DynamicBuffer {
+/*typedef struct RaquetStudio_DynamicBuffer {
     char * content;
     size_t capacity;
 } RaquetStudio_DynamicBuffer;
@@ -24,6 +24,6 @@ void RaquetStudio_AllocateBuffer(RaquetStudio_DynamicBuffer * buffer, size_t siz
 
 void RaquetStudio_ResizeBuffer(RaquetStudio_DynamicBuffer * buffer) {
 
-}
+}*/
 
 #endif

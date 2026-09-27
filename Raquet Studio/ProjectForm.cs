@@ -34,10 +34,10 @@ namespace Raquet_Studio
                 return;
             }
 
-            ScriptEditor editor = new ScriptEditor(button.Text, path);
+            ScriptEditor editor = new(button.Text, path);
             editor.StartPosition = FormStartPosition.Manual;
             editor.FormBorderStyle = FormBorderStyle.Fixed3D;
-            editor.Show();
+            Border98 border = new(editor);
         }
 
         void AssetButton_Click(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace Raquet_Studio
             ActorEditor editor = new ActorEditor(actor, path);
             editor.StartPosition = FormStartPosition.Manual;
             editor.FormBorderStyle = FormBorderStyle.Fixed3D;
-            editor.Show();
+            new Border98(editor);
         }
 
         void AddActorButton_Click(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace Raquet_Studio
                     continue;
                 }
 
-                if (name.Contains("<") || name.Contains(">") || name.Contains(":") || name.Contains("\"") || name.Contains("/") || name.Contains("\\") || name.Contains("|") || name.Contains("?") || name.Contains("*"))
+                if (name.Contains('<') || name.Contains('>') || name.Contains(':') || name.Contains('\'') || name.Contains('/') || name.Contains('\\') || name.Contains('|') || name.Contains('?') || name.Contains('*'))
                 {
                     MessageBox.Show("Actor name cannot contain, <, >, :, \", /, \\, |, ?, or *");
                     continue;
@@ -123,20 +123,39 @@ namespace Raquet_Studio
             RefreshActorList();
         }
 
-        Button CreateAssetButton(string name)
+        Button CreateAssetButton(string name, bool isPPF)
         {
-            Button scrButton = new Button();
-            scrButton.Name = name;
-            scrButton.Font = new Font(RightTabs.Font.FontFamily, 12);
-            scrButton.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right;
-            scrButton.FlatStyle = FlatStyle.Flat;
+            Button scrButton = new Button()
+            {
+                Name = name,
+                Font = new Font(RightTabs.Font.FontFamily, 12),
+                Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right,
+                FlatStyle = FlatStyle.Flat,
+                Width = ScriptsList.Width,
+                TextAlign = ContentAlignment.MiddleRight,
+                ForeColor = Color.White,
+                Margin = new Padding(0)
+            };
+            if (isPPF)
+            {
+                scrButton.Click += PpfButton_Click;
+            }
             scrButton.FlatAppearance.CheckedBackColor = Color.Cyan;
-            scrButton.Width = ScriptsList.Width;
             scrButton.FlatAppearance.BorderSize = 0;
-            scrButton.TextAlign = ContentAlignment.MiddleRight;
-            scrButton.ForeColor = Color.White;
-            scrButton.Margin = new Padding(0);
+
             return scrButton;
+        }
+
+        void PpfButton_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            string ppfPath = ProjectUtil.scriptPaths[button.Name];
+            //MessageBox.Show(ppfPath);
+            List<byte[]>? ppfData = ProjectUtil.LoadPPF(ppfPath);
+            if (ppfData == null) { MessageBox.Show("Failed to load PPF file."); return; }
+
+            PPFEditor editor = new PPFEditor(ppfData);
+            new Border98(editor);
         }
 
         private void ProjectForm_Load(object sender, EventArgs e)
@@ -146,7 +165,7 @@ namespace Raquet_Studio
             for (int i = 0; i < scripts.Length; i++)
             {
                 string scriptName = Path.GetFileName(scripts[i]);
-                Button scrButton = CreateAssetButton(scriptName.Replace(" ", "_"));
+                Button scrButton = CreateAssetButton(scriptName.Replace(" ", "_"), false);
                 scrButton.Text = scriptName;
                 scrButton.AccessibleName = scriptName;
                 scrButton.AccessibleDescription = "C Script";
@@ -161,7 +180,9 @@ namespace Raquet_Studio
             for (int i = 0; i < assets.Length; i++)
             {
                 string assetName = Path.GetFileName(assets[i]);
-                Button assButton = CreateAssetButton(assetName.Replace(" ", "_"));
+                //MessageBox.Show(assetName);
+                //MessageBox.Show(assetName.EndsWith(".ppf").ToString());
+                Button assButton = CreateAssetButton(assetName.Replace(" ", "_"), assetName.EndsWith(".ppf"));
                 assButton.Text = assetName;
                 assButton.AccessibleName = assetName;
                 assButton.AccessibleDescription = "Asset";
@@ -178,7 +199,7 @@ namespace Raquet_Studio
         {
             ActorsList.Controls.Clear();
 
-            Button addActorButton = CreateAssetButton("CreateActorButton");
+            Button addActorButton = CreateAssetButton("CreateActorButton", false);
             addActorButton.Text = "Create Actor";
             addActorButton.Click += AddActorButton_Click;
 
@@ -193,7 +214,7 @@ namespace Raquet_Studio
                 foreach (string json in jsons)
                 {
                     string actorName = Path.GetFileName(json);
-                    Button actButton = CreateAssetButton(actorName.Replace(" ", "_"));
+                    Button actButton = CreateAssetButton(actorName.Replace(" ", "_"), false);
                     actButton.Text = actorName;
                     actButton.AccessibleName = actorName;
                     actButton.AccessibleDescription = "Actor";
@@ -247,6 +268,7 @@ namespace Raquet_Studio
             studioData.Add(Convert.ToByte('A'));
             studioData.Add(Convert.ToByte('C'));
             studioData.Add(Convert.ToByte('T'));
+            studioData.Add((byte)ProjectUtil.actorPaths.Count);
             foreach (KeyValuePair<string,string> pair in ProjectUtil.actorPaths)
             {
                 RaquetActor? actor = RaquetActor.Load(pair.Value);
@@ -264,7 +286,7 @@ namespace Raquet_Studio
                 if (verbose) Print("Serializing ", actor.name, "... ");
 
                 byte[] actorData = actor.Serialize();
-                MessageBox.Show(string.Join(", ", actorData));
+                //MessageBox.Show(string.Join(", ", actorData));
                 studioData.AddRange(actorData);
 
                 /*try
