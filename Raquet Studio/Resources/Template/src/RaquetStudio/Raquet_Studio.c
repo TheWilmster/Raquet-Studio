@@ -46,8 +46,43 @@ int RaquetStudio_AnalyzeDataPack(const char* path) {
     printf("Bytecode version is %d", bytecodeVersion);
     printf("\n");
 
-    int chunkCount = fgetc(stream);
+    int actorCount = fgetc(stream);
+    int actorIndex = 0;
+    while (actorIndex < actorCount) {
+        
+        //yes this code is just BinaryReader.Read7BitEncodedInt from .NET
+        int earlyExit = 0;
+        int finalInteger = 0;
+        unsigned int result = 0;
+        int8_t byteReadJustNow;
+        const int MaxBytesWithoutOverflow = 4; 
+        for (int shift = 0; shift < MaxBytesWithoutOverflow * 7; shift += 7) {
+            byteReadJustNow = fgetc(stream);
+            result |= (byteReadJustNow & 0x7Fu) << shift;
 
+            if ((unsigned int)byteReadJustNow <= 0x7Fu) {
+                earlyExit = 1;
+                finalInteger = (int)result;
+            }
+        }
+        if (earlyExit == 0) {
+            byteReadJustNow = fgetc(stream);
+            if (byteReadJustNow > 0b1111u) {
+                printf("hey your fucking raquet studio binary file is corrupted as shit LMAOOO sucks to be you");
+                fclose(stream);
+                return -1;
+            }
+            result |= (unsigned int)byteReadJustNow << (MaxBytesWithoutOverflow * 7);
+            finalInteger = (int)result;
+        }
+
+        char actorName[finalInteger];
+        fgets(actorName, finalInteger, stream);
+
+        printf("%s", actorName);
+
+        actorIndex++;
+    }
     fclose(stream);
 
     return 0;

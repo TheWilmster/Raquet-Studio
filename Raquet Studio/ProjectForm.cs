@@ -289,6 +289,8 @@ namespace Raquet_Studio
                 //MessageBox.Show(string.Join(", ", actorData));
                 studioData.AddRange(actorData);
 
+                
+
                 /*try
                 {
                     byte[] actorData = actor.Serialize();
