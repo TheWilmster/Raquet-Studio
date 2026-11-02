@@ -1,89 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\",
+  "WorkspaceRootPath": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\projectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\projectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\actoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\actoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\raquet studio\\eventselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\eventselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\raquet studio\\actoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\actoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\webviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\webviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\webviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\webviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\raquet studio\\webviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\webviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\raquet studio\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\raquet studio\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\border98.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\webviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\webviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\projectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\projectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\actoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\actoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\raquet studio\\eventselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\eventselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\raquet studio\\actoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\actoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\webviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\webviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\raquet studio\\webviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\webviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\border98.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\border98.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\raquet studio\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\raquet studio\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\raquet studio\\scripteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\raquet studio\\scripteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\scripteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\raquet studio\\border98.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\raquet studio\\border98.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\border98.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\raquet studio\\projectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\raquet studio\\projectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\projectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\projectutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\projectutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\projectutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\fontutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\fontutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\fontutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\scripteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\scripteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\scripteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\raquet studio\\ppfeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\raquet studio\\ppfeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\ppfeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\ppfeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\ppfeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\ppfeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\owner\\documents\\github\\raquet-studio\\raquet studio\\eventselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|c:\\users\\wcoop\\documents\\github\\raquet studio\\raquet studio\\eventselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47EC7B42-C3B3-602A-4359-E9B46182C9E3}|Raquet Studio\\Raquet Studio.csproj|solutionrelative:raquet studio\\eventselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -94,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,22 +102,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ActorEditor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ActorEditor.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ActorEditor.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\ActorEditor.cs",
               "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ActorEditor.cs [Design]",
-              "RelativeToolTip": "Raquet Studio\\ActorEditor.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ActorEditor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-27T00:15:06.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "WebViewForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\WebViewForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\WebViewForm.Designer.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\WebViewForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\WebViewForm.Designer.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\WebViewForm.Designer.cs",
               "RelativeToolTip": "Raquet Studio\\WebViewForm.Designer.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAASwC0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -125,48 +125,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\MainForm.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\MainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\MainForm.cs [Design]",
               "RelativeToolTip": "Raquet Studio\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-25T22:02:05.969Z"
+              "WhenOpened": "2026-09-25T22:02:05.969Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "WebViewForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\WebViewForm.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\WebViewForm.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\WebViewForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\WebViewForm.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\WebViewForm.cs",
               "RelativeToolTip": "Raquet Studio\\WebViewForm.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvxIAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T21:46:00.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "WebViewForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\WebViewForm.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\WebViewForm.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\WebViewForm.cs",
               "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\WebViewForm.cs [Design]",
-              "RelativeToolTip": "Raquet Studio\\WebViewForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\WebViewForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T21:45:02.039Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ProjectForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ProjectForm.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ProjectForm.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\ProjectForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ProjectForm.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ProjectForm.cs",
               "RelativeToolTip": "Raquet Studio\\ProjectForm.cs",
-              "ViewState": "AgIAAAYBAAAAAAAAAAAiwCMBAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAO0AAAAAAAAAAADwvxoBAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T20:41:09.977Z",
               "EditorCaption": ""
@@ -175,9 +176,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "FontUtil.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\FontUtil.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\FontUtil.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\FontUtil.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\FontUtil.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\FontUtil.cs",
               "RelativeToolTip": "Raquet Studio\\FontUtil.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -187,9 +188,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Border98.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\Border98.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\Border98.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\Border98.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\Border98.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\Border98.cs",
               "RelativeToolTip": "Raquet Studio\\Border98.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA0wCUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -200,10 +201,10 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Border98.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\Border98.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\Border98.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\Border98.cs",
               "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\Border98.cs [Design]",
-              "RelativeToolTip": "Raquet Studio\\Border98.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\Border98.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T05:02:41.478Z"
             },
@@ -211,9 +212,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "ScriptEditor.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ScriptEditor.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ScriptEditor.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\ScriptEditor.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ScriptEditor.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ScriptEditor.cs",
               "RelativeToolTip": "Raquet Studio\\ScriptEditor.cs",
               "ViewState": "AgIAAPgAAAAAAAAAAAAcwA4BAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -224,9 +225,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "ProjectUtil.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ProjectUtil.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ProjectUtil.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\ProjectUtil.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ProjectUtil.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ProjectUtil.cs",
               "RelativeToolTip": "Raquet Studio\\ProjectUtil.cs",
               "ViewState": "AgIAAJAAAAAAAAAAAAASwKAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -236,9 +237,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "PPFEditor.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\PPFEditor.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\PPFEditor.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\PPFEditor.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\PPFEditor.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\PPFEditor.cs",
               "RelativeToolTip": "Raquet Studio\\PPFEditor.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA2wB0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -249,32 +250,33 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "PPFEditor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\PPFEditor.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\PPFEditor.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\PPFEditor.cs",
               "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\PPFEditor.cs [Design]",
-              "RelativeToolTip": "Raquet Studio\\PPFEditor.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\PPFEditor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-24T20:32:06.425Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\MainForm.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\MainForm.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\MainForm.cs",
               "RelativeToolTip": "Raquet Studio\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwFMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-25T21:38:34.902Z"
+              "WhenOpened": "2026-09-25T21:38:34.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "SplashScreen.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\SplashScreen.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\SplashScreen.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\SplashScreen.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\SplashScreen.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\SplashScreen.cs",
               "RelativeToolTip": "Raquet Studio\\SplashScreen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAIwAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -285,10 +287,10 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "SplashScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\SplashScreen.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\SplashScreen.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\SplashScreen.cs",
               "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\SplashScreen.cs [Design]",
-              "RelativeToolTip": "Raquet Studio\\SplashScreen.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\SplashScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-25T21:24:17.863Z"
             },
@@ -296,10 +298,10 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "ScriptEditor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ScriptEditor.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ScriptEditor.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\ScriptEditor.cs",
               "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ScriptEditor.cs [Design]",
-              "RelativeToolTip": "Raquet Studio\\ScriptEditor.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ScriptEditor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-24T21:13:31.131Z"
             },
@@ -307,21 +309,21 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "ProjectForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ProjectForm.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ProjectForm.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\ProjectForm.cs",
               "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ProjectForm.cs [Design]",
-              "RelativeToolTip": "Raquet Studio\\ProjectForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ProjectForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-04T19:07:21.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EventSelector.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\EventSelector.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\EventSelector.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\EventSelector.cs",
               "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\EventSelector.cs [Design]",
-              "RelativeToolTip": "Raquet Studio\\EventSelector.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\EventSelector.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-01T00:52:04.479Z"
             },
@@ -329,9 +331,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "EventSelector.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\EventSelector.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\EventSelector.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\EventSelector.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\EventSelector.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\EventSelector.cs",
               "RelativeToolTip": "Raquet Studio\\EventSelector.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -339,11 +341,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ActorEditor.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ActorEditor.cs",
+              "DocumentMoniker": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ActorEditor.cs",
               "RelativeDocumentMoniker": "Raquet Studio\\ActorEditor.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\GitHub\\Raquet-Studio\\Raquet Studio\\ActorEditor.cs",
+              "ToolTip": "C:\\Users\\wcoop\\Documents\\GitHub\\Raquet Studio\\Raquet Studio\\ActorEditor.cs",
               "RelativeToolTip": "Raquet Studio\\ActorEditor.cs",
               "ViewState": "AgIAAP0AAAAAAAAAAAAAAAsBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

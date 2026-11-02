@@ -78,12 +78,7 @@ namespace Raquet_Studio
 
         private async void Website_Click(object sender, EventArgs e)
         {
-            /*ProcessStartInfo psi = new ProcessStartInfo();
-            psi.FileName = "https://sinislosion.net";
-            psi.UseShellExecute = true;
-            Process.Start(psi);*/
-
-            WebViewForm form = new("https://sinislosion.net");
+            WebViewForm form = new("https://sinislosion.net/");
             Border98 border = new(form);
         }
 
